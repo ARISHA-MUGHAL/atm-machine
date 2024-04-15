@@ -1,2 +1,2 @@
 # atm-machine
-This repository contains a simple calculator built using TypeScript, Node.js, and Inquirer. The calculator allows users to perform basic arithmetic operations through a command-line interface.
+A basic command-line ATM application in TypeScript that allows users to deposit, withdraw, and check their account balance.
