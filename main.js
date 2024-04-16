@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 let myBalance = 50000;
 let myPin = 3638;
@@ -45,7 +46,17 @@ if (atmPin.pinCode === myPin) {
             name: "preDefinedAmount",
             message: "Choose how much amount you want to withdraw",
             type: "list",
-            choices: ["1000", "5000", "10000", "15000", "20000", "25000", "30000", "40000", "50000"]
+            choices: [
+                "1000",
+                "5000",
+                "10000",
+                "15000",
+                "20000",
+                "25000",
+                "30000",
+                "40000",
+                "50000",
+            ],
         });
         if (fastCash.preDefinedAmount > myBalance) {
             console.log("you dont have this much money");
